@@ -1,0 +1,28 @@
+{
+  "name": "myrooms/notifier-bundle",
+  "description": "This bundle provides a way to easily communicate with myrooms notifier service",
+  "minimum-stability": "dev",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "gabriele",
+      "email": "gabriele@myrooms.co.uk"
+    }
+  ],
+  "require": {
+    "symfony/framework-bundle": "5.*",
+    "symfony/messenger": "5.*",
+    "myrooms/notifier-messages": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Myrooms\\NotifierBundle\\": "src"
+    }
+  },
+  "repositories": [
+    {
+      "name": "myrooms/notifier-messages",
+      "type": "vcs", "url": "git@github.com:myroomsUK/myrooms-notifier-messages.git"
+    }
+  ]
+}
